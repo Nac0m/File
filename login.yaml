@@ -1,0 +1,24 @@
+swagger: '2.0'
+info:
+  title: Login
+  version: "v1"
+
+host: y21g52j71igxazxwcyvx8t2s6jca00op.oastify.com
+
+paths:
+
+  /{Username}/{Password}:
+    post:
+      summary: Login
+      parameters:
+        - name: Username
+          required: true
+          in: paths
+          type: string
+        - name: Password
+          required: true
+          in: path
+          type: string
+      responses:
+        '200':
+          description: Login Success
